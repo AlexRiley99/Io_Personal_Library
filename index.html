@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Io Personal Library - Log In</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="contentContainer">
+        <div id="welcomeMsg">
+            <h1>Welcome to Io Personal Library!</h1>
+            <h2>Please log in, create an account, or click <a href="about">here</a> to learn more.</h2>
+        </div>
+        <div id="loginDiv">
+            <form id="loginForm">
+                <fieldset id="loginFieldset">
+                    <legend for="loginFieldset">Log In</legend>
+                    <h3 id="usernameLabel">Username: <input type="text" id="usernameInput" class="loginField"></h3>
+                    <h3 id="passwordLabel">Password: <input type="text" id="passwordInput"class=loginField></h3>
+                </fieldset>
+                <div id="buttonContainer">
+                    <button id="loginBtn">Log In</button><button id="createAcctBtn">Create Account</button>
+                </div>
+                <div class="errorDiv">
+                    <h4 class="errorMsg" id="loginError"></h4>
+                </div>
+                <div class="linkDiv">
+                    <h5><a href="https://jupitertechstudio.com">Jupiter Tech Studio</a> | <a href="privacy.hml">Privacy</a></h5>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer_div">
+        <footer>
+            <h6><a href="https://jupitertechstudio.com">Jupiter Tech Studio</a> | February 2025 | Last Updated: February 9, 2025</h6>
+        </footer>
+    </div>
+</body>

@@ -1,0 +1,45 @@
+:root{
+    --button: rgb(54, 26, 2);
+    --hover: rgb(112, 55, 5);
+    --active: rgb(183, 126, 76);
+    --lightText: rgb(243, 233, 226);
+    --darkText: rgb(35, 18, 3);
+}
+.footer_div{
+    text-align: center;
+    border-top: 5px double white;
+    margin: 20px;
+    color: var(--darkText);
+    text-shadow: 3px 2px 3px var(--lightText), -3px -2px 3px var(--lightText);
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+.footer_div a{
+    text-align: center;
+    color: var(--darkText);
+    text-shadow: 3px 2px 3px var(--lightText), -3px -2px 3px var(--lightText);
+    text-decoration: none;
+
+}
+
+.baskervville-sc-regular {
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+button{
+    border-radius: 5px;
+    background-color: var(--button);
+    font-family: "Baskerville SC";
+    color: var(--lightText);
+    height: 30px;
+    width: 200px;
+    transition: background-color 0.5s;
+}
+button:hover{
+    background-color: var(--hover);
+}
+button:active{
+    background-color: var(--active);
+}
