@@ -85,3 +85,19 @@ button:hover{
 button:active{
     background-color: var(--active);
 }
+
+.navbar_div{
+    border-bottom: 5px double rgba(128, 128, 128, 0.5);
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.navBtn{
+    width: 30%;
+}
+
+::placeholder{
+    font-family: "Baskerville SC", serif;
+    text-align: center;
+}
