@@ -183,13 +183,13 @@ h2, h3{
     font-family: Arial, Helvetica, sans-serif;
 }
 #script{
-    font-family: "Dancing Script", serif;
+    font-family: "Dancing Script", sans-serif;
 }
 #handwriting{
-    font-family: "Indie Flower", serif;
+    font-family: "Indie Flower", sans-serif;
 }
 #electronic{
-    font-family: "Orbitron", serif;
+    font-family: "Orbitron", sans-serif;
 }
 #serif, #sansSerif, #script, #handwriting, #electronic{
     border: 1px solid gray;
