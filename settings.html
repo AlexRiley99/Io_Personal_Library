@@ -5,6 +5,7 @@
     <title>Io Personal Library - Settings</title>
     <link rel="stylesheet" href="settings.css">
     <link rel="stylesheet" href="Styles.css">
+    <script src="settings.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
@@ -14,20 +15,19 @@
 <body>
     <h1>Settings</h1>
 <div id="contentContainer">
-    <div id="columnOne">
         <div id="referenceSettingsDiv">
             <h2 id="referenceSettings">Reference Settings</h2>
             <div id="bookSizeDiv" class="settingDiv">
                 <h3>Book Size</h3>
-                <div id="smallBook" class="bookSize">
+                <div id="smallBook" class="bookSize" value="small">
                     <p class="exampleTitle">Small Book</p>
                     <p class="exampleAuthor">By: Your Name</p>
                 </div>
-                <div id="mediumBook" class="bookSize">
+                <div id="mediumBook" class="bookSize" value="medium">
                     <p class="exampleTitle">Medium Book</p>
                     <p class="exampleAuthor">By: Your Name</p>
                 </div>
-                <div id="largeBook" class="bookSize">
+                <div id="largeBook" class="bookSize" value="large">
                     <p class="exampleTitle">Large Book</p>
                     <p class="exampleAuthor">By: Your Name</p>
                 </div>
@@ -35,32 +35,35 @@
             <div id="bookColorDiv" class="settingDiv">
                 <h3 id="bookColor">Book Color</h3>
                 <div id="colors">
-                    <div id="red" class="colorDiv"></div>
-                    <div id="orange" class="colorDiv"></div>
-                    <div id="yellow" class="colorDiv"></div>
-                    <div id="green" class="colorDiv"></div>
-                    <div id="blue" class="colorDiv"></div>
-                    <div id="indigo" class="colorDiv"></div>
-                    <div id="purple" class="colorDiv"></div>
-                    <div id="pink" class="colorDiv"></div>
-                    <div id="black" class="colorDiv"></div>
-                    <div id="default">Default</div>
+                    <div id="red" class="colorDiv" onclick="changeBookColor(this.id)"></div>
+                    <div id="orange" class="colorDiv" value="orange"></div>
+                    <div id="yellow" class="colorDiv" value="yellow"></div>
+                    <div id="green" class="colorDiv" value="green"></div>
+                    <div id="blue" class="colorDiv" value="blue"></div>
+                    <div id="indigo" class="colorDiv" value="indigo"></div>
+                    <div id="purple" class="colorDiv" value="purple"></div>
+                    <div id="pink" class="colorDiv" value="pink"></div>
+                    <div id="black" class="colorDiv" value="black"></div>
+                    <div id="default" value="white">Default</div>
                 </div>
             </div>
+
             <div id="fontsDiv" class="settingDiv">
                 <h3>Fonts</h3>
-                <div id="serif" class="fontDiv">Serif</div>
-                <div id="sansSerif" class="fontDiv">Sans Serif</div>
-                <div id="script" class="fontDiv">Script</div>
-                <div id="handwriting" class="fontDiv">Handwriting</div>
-                <div id="electronic" class="fontDiv">Electronic</div>
+                <div id="serif" class="fontDiv" value="serif">Serif</div>
+                <div id="sansSerif" class="fontDiv" value="sansSerif">Sans Serif</div>
+                <div id="script" class="fontDiv" value="script">Script</div>
+                <div id="handwriting" class="fontDiv" value="handwriting">Handwriting</div>
+                <div id="electronic" class="fontDiv" value="electronic">Electronic</div>
             </div>
         </div>
-    </div>
-        <div id="columnTwo">
+    
             <div id="previewDiv" class="settingDiv">
                 <h3>Preview</h3>
-                <div id="preview">
+                <div id="preview" 
+                    style="background: linear-gradient(to bottom right, rgb(207, 207, 207), rgb(232, 231, 231), rgb(246, 245, 245), white, rgb(246, 245, 245),rgb(232, 231, 231), rgb(207, 207, 207));
+                    height: 100px;
+                    width: 90px;">
                     <p class="exampleTitle">Preview Book</p>
                     <p class="exampleAuthor">By: Your Name</p>
                 </div>
@@ -68,12 +71,12 @@
             <div id="accountSettingsDiv" class="settingDiv">
                 <h2>Account Settings</h2>
             </div>
-        </div>
     </div>
     <div id="buttonContainer">
         <button id="saveBtn">Save</button>
         <button id="cancelBtn">Cancel</button>
     </div>
+</div>
     <div class="footer_div">
         <footer>
             <h6><a href="https://jupitertechstudio.com">Jupiter Tech Studio</a> | February 2025 | Last Updated: February 10, 2025</h6>

@@ -6,61 +6,68 @@ h2, h3{
     text-decoration: underline;
 }
 #contentContainer{
-    width: 80%;
+    width: 100vw;
+    left: 0;
+    right: 0;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 2;
-}
-#columnOne{
-    grid-column: 1;
-}
-#columnTwo{
-    grid-column: 2;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    align-items: center;
 }
 .settingDiv{
     border-bottom: 5px double rgba(128, 128, 128, 0.5);
     padding: 20px;
+    width: 100%;
 }
 #referenceSettingsDiv{
-    grid-column: 1;
-    grid-row: 2;
-    border-right: 5px double rgba(128, 128, 128, 0.5);
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 1;
+    column-gap: 10px;
+    width: 100%;
+    border-bottom: 5px double rgba(128, 128, 128, 0.5);
+    align-items: center;
+    justify-content: center;
 }
 
 #bookSizeDiv{
-    border-top: 5px double rgba(128, 128, 128, 0.5);
+    margin: 0;
     display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 4;
-    row-gap: 5px;
+    grid-template-columns: 3;
+    grid-template-rows: 1;
+    column-gap: 5px;
+    width: 90%;
+    border: none;
 }
 .bookSize{
     background: linear-gradient(to bottom right, rgb(207, 207, 207), rgb(232, 231, 231), rgb(246, 245, 245), white, rgb(246, 245, 245),rgb(232, 231, 231), rgb(207, 207, 207));
-    margin-right: 20px;
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin: 0;
     padding: 5px;
     border-radius: 3px;
     text-align: center;
 }
 #referenceSettings{
+    grid-column: span 3;
     grid-row: 1;
+}
+#smallBook, #mediumBook, #largeBook{
+    margin: 0;
 }
 #smallBook{
     height: 100px;
     width: 90px;
-    grid-row: 2;
+    grid-column: 1;
 }
 #mediumBook{
     height: 150px;
     width: 140px;
-    grid-row: 3;
+    grid-column: 2;
 }
 #largeBook{
     height: 200px;
     width: 190px;
-    grid-row: 4;
+    grid-column: 3;
 }
 
 
@@ -91,11 +98,14 @@ h2, h3{
     margin: auto;
     display: block;
     padding: 20px;
+    grid-column: 2;
+    grid-row: 2;
+    width: 90%;
+    align-items: center;
+    top: 0;
+    border: none;
 }
-#bookColor{
-    grid-column: span 3;
-    grid-row: 1;
-}
+
 
 
 #red{
@@ -155,6 +165,12 @@ h2, h3{
     border-radius: 10px;
 }
 
+#fontsDiv{
+    width: 90%;
+    grid-column: 3;
+    grid-row: 2;
+    border: none;
+}
 .fontDiv{
     font-size: 20px;
     width: 150px;
@@ -184,12 +200,15 @@ h2, h3{
 
 #previewDiv{
     grid-row: 2;
+    grid-column: 1;
     height: 300px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
 }
 #preview{
-    background: linear-gradient(to bottom right, rgb(207, 207, 207), rgb(232, 231, 231), rgb(246, 245, 245), white, rgb(246, 245, 245),rgb(232, 231, 231), rgb(207, 207, 207));
-    height: 100px;
-    width: 90px;
     margin-left: 15%;
     margin-right: 20px;
     margin-bottom: 5px;
@@ -200,11 +219,45 @@ h2, h3{
 }
 
 #accountSettingsDiv{
-    grid-row: 2;
+    grid-row: 3;
 }
 
 #buttonContainer{
     margin: auto;
     text-align: center;
     padding-top: 20px;
+}
+
+@media(max-width: 1024px){
+    #referenceSettingsDiv{
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 6;
+        border-bottom: none; 
+    }
+    #bookSizeDiv, #bookColorDiv, #fontsDiv, #previewDiv, #accountSettingsDiv{
+        width: 100%;
+        grid-column: 1;
+        border-bottom: 5px double rgba(128, 128, 128, 0.5);
+        align-items: center;
+        justify-content: center;
+    }
+    #referenceSettings{
+        grid-row: 1;
+    }
+    #bookSizeDiv{
+        grid-row: 2;
+    }
+    #bookColorDiv{
+        grid-row: 3;
+    }
+    #fontsDiv{
+        grid-row: 4;
+    }
+    #previewDiv{
+        grid-row: 5;
+    }
+    #accountSettingsDiv{
+        grid-row: 6;
+    }
 }
